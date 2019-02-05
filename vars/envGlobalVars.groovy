@@ -1,6 +1,7 @@
 #!/bin/env groovy
 
-def call() {
+def call(String var = 'info') {
+    
     echo "BUILD_NUMBER" :: $BUILD_NUMBER
     echo "BUILD_ID" :: $BUILD_ID
     echo "BUILD_DISPLAY_NAME" :: $BUILD_DISPLAY_NAME
